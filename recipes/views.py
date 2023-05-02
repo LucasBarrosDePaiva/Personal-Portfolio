@@ -8,4 +8,6 @@ def home(request):
 
 
 def contato(request):
-    return HttpResponse('contato')
+    return render(request, 'recipes/contato.html')
+    # return render(request, 'recipes/contato.html') -> Retorna o que está no arquivo
+    # return HttpResponse('Retorna o que está escrito aqui dentro')
